@@ -23,11 +23,10 @@ int Prompt(string message)
 }
 void OutputDisplay(int [] array) //выводит созданный массив на экран
 {
-    for (int i = 0; i < array.Length -1; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.WriteLine(array[i] + " ");
     }
-    Console.WriteLine($"{array[array.Length -1]}");
 }
 void EvenNumbers(int [] num) //считает кол-во чётных элементов массива
 {
@@ -47,5 +46,5 @@ Massive(sizeNumber);
 int [] massiv = Massive(sizeNumber);
 Console.WriteLine("Ваш массив.");
 OutputDisplay(massiv);
-Console.WriteLine("Чётные числа массива: ");
+Console.WriteLine("Кол-во чётных чисел массива: ");
 EvenNumbers(massiv);
