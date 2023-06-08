@@ -3,15 +3,11 @@
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
 Console.Clear();
-int Prompt (string msg)
+int Prompt(string message)
 {
-    Console.Write(msg);
-    string value = Console.ReadLine();
-    if ((int.TryParse(value, out int val)) == false)
-    {
-        Console.WriteLine("Это не число ");
-    }
-    return val;
+    Console.Write(message);
+    int number = int.Parse(Console.ReadLine()!);
+    return number;
 }
 double[] Massive(int size)
 {
