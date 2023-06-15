@@ -8,7 +8,7 @@ Console.Clear();
 int Prompt (string msg)
 {
     Console.Write(msg);
-    string value = Console.ReadLine();
+    string value = Console.ReadLine()!;
     if ((int.TryParse(value, out int val)) == false)
     {
         Console.WriteLine("Это не число ");
