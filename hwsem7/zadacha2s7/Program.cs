@@ -16,7 +16,7 @@ Console.Clear();
 string Prompt2 (string msg)
 {
     Console.Write(msg);
-    string value = Console.ReadLine();
+    string value = Console.ReadLine()!;
     return value;
 }
 
